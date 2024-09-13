@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Assisto Edu",
   description: "Tu Asistente Educativo Inteligente",
+  icons: {
+    icon: '/img/assistoIcon192.png', // Cambia por el nombre y extensión de tu archivo
+  },
 };
 
 export default function RootLayout({
@@ -16,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#9333ea" /> {/* Cambia el color por el que desees */}
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
